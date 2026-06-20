@@ -34,7 +34,7 @@ Library yang dipakai:
 
 File model tidak disimpan di repository ini karena ukurannya besar. Model disimpan terpisah di repository berikut:
 
-[535220231-model-coffedetection](https://drive.google.com/file/d/15rkFIa4iXYsoRINuhyHd4wgHeEEn39X0/view?usp=sharing)
+https://drive.google.com/file/d/15rkFIa4iXYsoRINuhyHd4wgHeEEn39X0/view?usp=sharing
 
 download file model tersebut, lalu pastikan file model tersedia di komputer.
 
