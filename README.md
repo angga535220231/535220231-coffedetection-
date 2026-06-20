@@ -30,18 +30,26 @@ Library yang dipakai:
 - Pillow
 - python-dotenv
 
-## 3. Pastikan Model Ada
+## 3. Siapkan Model
+
+File model tidak disimpan di repository ini karena ukurannya besar. Model disimpan terpisah di repository berikut:
+
+[535220231-model-coffedetection](Gdrive)
+
+download file model tersebut, lalu pastikan file model tersedia di komputer.
+
+Contoh :
 
 Secara default, aplikasi mencari model training di:
 
 ```text
-D:\skripsi\Python\DataCoffe\cnn_multimodal_model.h5
+C:\Users\HP\Downloads\coffee-detection-20260417T131300Z-3-001\coffee-detection\models\coffee_grading_cnn_model.keras
 ```
 
-Kalau model ada di lokasi lain, set `MODEL_PATH` dulu sebelum menjalankan Flask:
+Kalau model dari repository terpisah berada di lokasi lain, set `MODEL_PATH` dulu sebelum menjalankan Flask:
 
 ```powershell
-$env:MODEL_PATH="D:\lokasi\model_kamu.h5"
+$env:MODEL_PATH="D:\lokasi\535220231-model-coffedetection\cnn_multimodal_model.h5"
 ```
 
 ## 4. Jalankan Website
@@ -108,13 +116,17 @@ Periksa hal berikut:
 pip install tensorflow
 ```
 
-2. File model benar-benar ada di path:
+2. File model sudah diambil dari repository model:
+
+[angga535220231/535220231-model-coffedetection](https://github.com/angga535220231/535220231-model-coffedetection.git)
+
+3. Path `MODEL_PATH` sudah mengarah ke file model yang benar. Contoh:
 
 ```text
-D:\skripsi\Python\DataCoffe\cnn_multimodal_model.h5
+D:\lokasi\535220231-model-coffedetection\cnn_multimodal_model.h5
 ```
 
-3. Flask dijalankan dari environment Python yang sama dengan TensorFlow.
+4. Flask dijalankan dari environment Python yang sama dengan TensorFlow.
 
 Jika website masih menampilkan hasil lama, hentikan server Flask dengan:
 

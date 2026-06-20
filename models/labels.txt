@@ -1,0 +1,4 @@
+Grade_A_Premium
+Grade_B_Good
+Grade_C_Standard
+Grade_D_Defective
