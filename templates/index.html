@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Analisis Kualitas Biji Kopi{% endblock %}
+
+{% block content %}
+  <section class="grid gap-6 lg:grid-cols-12">
+    {% include "partials/input_panel.html" %}
+
+    <div class="space-y-6 lg:col-span-5">
+      {% include "partials/result_panel.html" %}
+      {% include "partials/sensor_panel.html" %}
+    </div>
+  </section>
+
+  {% include "partials/probabilities_panel.html" %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}

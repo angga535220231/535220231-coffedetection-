@@ -1,0 +1,31 @@
+{
+  "refs": {
+    "mq135": 304.83,
+    "mq2": 245.81,
+    "mq3": 2770.64
+  },
+  "weights": {
+    "mq135": 0.4,
+    "mq2": 0.35,
+    "mq3": 0.25
+  },
+  "deviation_multiplier": 120.0,
+  "categories": [
+    {
+      "min_score": 85.0,
+      "label": "Sangat Stabil"
+    },
+    {
+      "min_score": 70.0,
+      "label": "Stabil"
+    },
+    {
+      "min_score": 50.0,
+      "label": "Cukup Stabil"
+    },
+    {
+      "min_score": 0.0,
+      "label": "Tidak Stabil"
+    }
+  ]
+}
