@@ -116,17 +116,13 @@ Periksa hal berikut:
 pip install tensorflow
 ```
 
-2. File model sudah diambil dari repository model:
-
-[angga535220231/535220231-model-coffedetection](https://github.com/angga535220231/535220231-model-coffedetection.git)
-
-3. Path `MODEL_PATH` sudah mengarah ke file model yang benar. Contoh:
+2. Path `MODEL_PATH` sudah mengarah ke file model yang benar. Contoh:
 
 ```text
 D:\lokasi\535220231-model-coffedetection\cnn_multimodal_model.h5
 ```
 
-4. Flask dijalankan dari environment Python yang sama dengan TensorFlow.
+3. Flask dijalankan dari environment Python yang sama dengan TensorFlow.
 
 Jika website masih menampilkan hasil lama, hentikan server Flask dengan:
 
@@ -139,3 +135,4 @@ Lalu jalankan ulang:
 ```powershell
 flask --app app run --debug
 ```
+
